@@ -1,0 +1,255 @@
+:root{
+    --blanco: hsl(0, 0%, 100%);
+    --blacoRosa: hsl(330, 100%, 98%);
+    --cascaraHuevo: hsl(30, 54%, 90%);
+    --grisClaro: hsl(30, 18%, 87%);
+    --marron: hsl(30, 10%, 34%);
+    --grisOscuro: hsl(24, 5%, 18%);
+    --marronOscuro: hsl(44, 96%, 31%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.outfit{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 600, 700;
+  font-style: normal;
+}
+
+p, li, ol{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--marron);
+    line-height: 2;
+}
+
+h3{
+    font-family: "Young Serif", serif;
+    font-size: 20px;
+}
+
+h2{
+    font-family: "Young Serif", "serif";
+    color: var(--marronOscuro);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+
+
+body{
+    background-color: var(--cascaraHuevo);
+}
+
+
+.recipientePrincipal{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+    padding: 3rem;
+}
+
+@media (min-width: 391px) { 
+    .recipientePrincipal{
+    
+        width: 50%;
+        height: 30%;
+        margin: 10rem auto;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--blanco);
+        border-radius: 2%;
+        padding: 3rem;
+    }
+}
+
+
+
+
+.imagen-recipiente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 97%;
+    height: 5%;
+    border-radius: 5%;
+}
+
+.imagen-recipiente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+
+}
+
+header h1{
+    font-size: 4rem;
+    margin-left: 1rem;
+    font-family: "Young serif", sans-serif;
+    font-weight: 400;
+    color: var(--grisOscuro);
+}
+
+header p{
+    margin-top: -1rem;
+    color: var(--marron);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+}
+
+
+@media (min-width: 391px) { 
+    .preparation-time{
+        background-color: hsl(30, 54%, 90%, 0.2);
+        border-radius: 5%;
+        padding: 0.2rem;
+        margin: 1rem;
+    }
+    
+    .preparation-time ul li{
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        color: var(--marron);
+    }
+    
+    .preparation-time h3{
+        padding-left: 2rem;
+        color:#914b7b;
+        font-weight: 100;
+        font-family: "Young Serif", "serif";
+    }
+}
+
+.preparation-time{
+    background-color: hsl(30, 54%, 90%, 0.2);
+    border-radius: 5%;
+    padding: 0.2rem;
+    margin: 1rem;
+}
+
+.preparation-time ul li{
+    color: var(--marron);
+}
+
+.preparation-time h3{
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    color:#914b7b;
+    font-weight: 100;
+    font-family: "Young Serif", "serif";
+}
+
+
+.instructions{
+    border-bottom: 1px solid;
+    border-color: var(--grisClaro);
+}
+
+.ingredientes li{
+    padding: 1rem;
+}
+
+.ingredientes{
+    border-bottom: 1px solid;
+    border-color: var(--grisClaro);
+}
+
+
+.instructions li::marker{
+    font-weight: 1000;
+    color: var(--marronOscuro);
+}
+
+.instructions li{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+}
+
+.nutrition-description p{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+
+
+
+.elemento{
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 1px solid;
+    border-color: var(--grisClaro);
+}
+
+.unidad p{
+    color: var(--marronOscuro);
+    font-weight: bold;
+}
+
+@media (min-width: 770px) { 
+    .elemento{
+        padding-left: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        border-bottom: 1px solid;
+        border-color: var(--grisClaro);
+    }
+    
+    .unidad p{
+        color: var(--marronOscuro);
+        font-weight: bold;
+        margin-right: 25rem;
+    }
+}
+
+
+@media (min-width: 391px) { 
+    .elemento{
+        padding-left: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        border-bottom: 1px solid;
+        border-color: var(--grisClaro);
+    }
+    
+    .unidad p{
+        color: var(--marronOscuro);
+        font-weight: bold;
+    }
+}
+
+
+@media (min-width: 391px) { 
+    .attribution{
+        display: flex;
+        justify-content: center;
+    }
+}
+.attribution{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
